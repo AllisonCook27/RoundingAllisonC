@@ -30,10 +30,10 @@
         {
             this.btnRound = new System.Windows.Forms.Button();
             this.lblEnter = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txtDecimal = new System.Windows.Forms.TextBox();
+            this.numRound = new System.Windows.Forms.NumericUpDown();
             this.lblRound = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRound)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRound
@@ -57,24 +57,24 @@
             this.lblEnter.TabIndex = 1;
             this.lblEnter.Text = "Enter a decimal number:";
             // 
-            // textBox1
+            // txtDecimal
             // 
-            this.textBox1.Location = new System.Drawing.Point(205, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtDecimal.Location = new System.Drawing.Point(205, 34);
+            this.txtDecimal.Name = "txtDecimal";
+            this.txtDecimal.Size = new System.Drawing.Size(100, 20);
+            this.txtDecimal.TabIndex = 2;
             // 
-            // numericUpDown1
+            // numRound
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(382, 86);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numRound.Location = new System.Drawing.Point(382, 86);
+            this.numRound.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(33, 20);
-            this.numericUpDown1.TabIndex = 3;
+            this.numRound.Name = "numRound";
+            this.numRound.Size = new System.Drawing.Size(33, 20);
+            this.numRound.TabIndex = 3;
             // 
             // lblRound
             // 
@@ -93,13 +93,13 @@
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(447, 220);
             this.Controls.Add(this.lblRound);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.numRound);
+            this.Controls.Add(this.txtDecimal);
             this.Controls.Add(this.lblEnter);
             this.Controls.Add(this.btnRound);
             this.Name = "frmRounding";
             this.Text = "Rounding Program by Allison C";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRound)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,8 +109,8 @@
 
         private System.Windows.Forms.Button btnRound;
         private System.Windows.Forms.Label lblEnter;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.TextBox txtDecimal;
+        private System.Windows.Forms.NumericUpDown numRound;
         private System.Windows.Forms.Label lblRound;
     }
 }

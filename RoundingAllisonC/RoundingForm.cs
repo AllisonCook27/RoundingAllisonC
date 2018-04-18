@@ -19,6 +19,10 @@ namespace RoundingAllisonC
 {
     public partial class frmRounding : Form
     {
+        //variables
+        double decimalNumber;
+        int round;
+
         public frmRounding()
         {
             InitializeComponent();
@@ -26,7 +30,31 @@ namespace RoundingAllisonC
 
         private void btnRound_Click(object sender, EventArgs e)
         {
+            //setting the input
+            decimalNumber = Convert.ToDouble(txtDecimal);
 
+            //seting the number of decimal places
+            round = Convert.ToInt32(numRound.Value);
+
+            //calling the function
+            RoundDecimal(ref decimalNumber, round);
+        }
+
+        void RoundDecimal(ref double decimalNumber, int round)
+        {
+            double newNumber;
+
+            //setting the new number to the decimal moved a certain number of decimal places
+            newNumber = decimalNumber * Math.Exp(10^round);
+
+            // adding 0.5
+            newNumber = newNumber + 0.5;
+
+            //getting ride of extra numbers
+            newNumber = Math.Truncate(newNumber);
+
+            //moving decimal point back
+            newNumber = 
         }
     }
 }
