@@ -54,7 +54,9 @@ namespace RoundingAllisonC
             newNumber = Math.Truncate(newNumber);
 
             //moving decimal point back
-            newNumber = 
+            newNumber = newNumber / Math.Exp(10 ^ round);
+
+            //displaying message box
         }
     }
 }
