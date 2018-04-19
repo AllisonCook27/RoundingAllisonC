@@ -31,7 +31,7 @@ namespace RoundingAllisonC
         private void btnRound_Click(object sender, EventArgs e)
         {
             //setting the input
-            decimalNumber = Convert.ToDouble(txtDecimal);
+            decimalNumber = Convert.ToDouble(txtDecimal.Text);
 
             //seting the number of decimal places
             round = Convert.ToInt32(numRound.Value);
@@ -54,9 +54,10 @@ namespace RoundingAllisonC
             newNumber = Math.Truncate(newNumber);
 
             //moving decimal point back
-            newNumber = newNumber / Math.Exp(10 ^ round);
+            newNumber = newNumber / round;
 
             //displaying message box
+            MessageBox.Show("The rounded answer is" + newNumber, "Rounding Program");
         }
     }
 }
