@@ -45,7 +45,9 @@ namespace RoundingAllisonC
             double newNumber;
 
             //setting the new number to the decimal moved a certain number of decimal places
-            newNumber = decimalNumber * Math.Exp(10^round);
+            newNumber = decimalNumber * Math.Pow(10,round);
+            Console.WriteLine(Math.Exp(10 ^ round));
+            Console.WriteLine(newNumber);
 
             // adding 0.5
             newNumber = newNumber + 0.5;
@@ -54,7 +56,7 @@ namespace RoundingAllisonC
             newNumber = Math.Truncate(newNumber);
 
             //moving decimal point back
-            newNumber = newNumber / round;
+            newNumber = newNumber / Math.Pow(10, round);
 
             //displaying message box
             MessageBox.Show("The rounded answer is" + newNumber, "Rounding Program");
